@@ -10,7 +10,7 @@ bp = Blueprint("destination", __name__, url_prefix="/destinations")
 
 @bp.route("/<id>")
 def show(id):
-    destination = get_destination()
+    destination = None #get_destination()
     # dest = destination[id]
     return render_template("destinations/show.html", destination=destination)
 
